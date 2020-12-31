@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.firstDiv{
+    background-image:linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("bus.jpg");
+    top:0;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.contentDiv{
+    font-family: 'Nerko One', cursive;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    justify-content: center;
+}
+.title{
+    font-size: 25px;
+    text-shadow: 0px 2px 3px black;
+}
+.titleContent{
+    margin-top: 200px;
+    text-align: center;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+.nav-item{
+    text-align: right;
+    margin: 0px;
+}
+.busContent{
+    margin-top: 100px;
+    font-size: 15px;
+    overflow-x: auto;
+    justify-content: space-around;
+    
+}
+.thead{
+    background-color: black;
+}
+.table tr td{
+    padding: 25px;
+}
+.table thead td{
+    color: white;
+}
+.searchDiv{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    text-align: center;
+}
+input{
+    padding: 10px;
+    height: 40px;
+}
+.searchBtn{
+    margin-bottom: 5px;
+}
+.popUp{
+    background: rgba(0, 0, 0, 0.7);
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.popupcontent{
+    margin-top: 15%;
+    width: fit-content;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon{
+    width: 35px;
+}
+.icon1{
+    width: 28px;
+    margin-left:3px;
+}
+.table td{
+    cursor: pointer;
+}
+.poptab td{
+    padding: 10px;
+}
+.info1{
+    margin-left: 60px;
+}
+.closeBtn{
+    float: right;
+    font-size: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.closeBtn:hover{
+    color: red;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    justify-content: space-between;
+    min-height: 8vh;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+}
+.logo{
+     margin-top: 10px;
+     margin-left: 25px;
+     color: #fff;
+     letter-spacing: 2px;
+}
+.nav-items{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+}
+.nav-items a{
+    margin-top: 0%;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.nav-items a:hover{
+    box-shadow: rgb(147, 248, 255) 0px 0px 2px;
+    border-radius: 10px;
+}
+.burger{
+    margin-top: 5px;
+    margin-right: 25px;
+    display: none;
+}
+.burger div{
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:768px){
+    .nav-items{
+        position: absolute;
+        right: 0;
+        height: 45vh;
+        margin: 0;
+        width: 200px;
+        top: 5vh;
+        background-color: rgb(32, 32, 32);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        transform: translateY(-115%);
+        transition: ease-in 0.5s;
+        
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+    }
+} 
+
+.nav-active{
+    transform: translateY(0%);
+}
+.lineA{
+    transform: rotate(-45deg) translate(-6px,5px);
+    width:25px;
+}
+.lineB{
+    display: none;
+}
+.lineC{
+    transform:rotate(45deg) translate(-1px,-1px);
+    width:25px;
+}
+.contentDiv .btn{
+     margin-left:46%;
+}
